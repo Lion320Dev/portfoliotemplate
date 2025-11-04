@@ -1,0 +1,28 @@
+@use "sass:meta";
+// Import vendor and plugin CSS
+@import "../css/vendor/fontawesome.css";
+@import "../css/plugins/swiper.css";
+@import "../css/plugins/odometer.css";
+@import "../css/vendor/animate.min.css";
+@import "../css/vendor/bootstrap.min.css";
+
+// Import custom style
+@include meta.load-css("style.scss");
+
+.typeanimation {
+  transition: width 0.58s ease-out !important;
+  height: 100% !important;
+  //   margin-top: -10px;
+  padding-right: 10px;
+  b.is-visible {
+    padding-right: 10px !important;
+  }
+}
+.Toastify__close-button {
+  width: fit-content !important;
+  top: 20px !important;
+}
+.image-auto {
+  width: auto;
+  height: auto;
+}
